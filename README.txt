@@ -1,0 +1,1 @@
+Before running the application, plesa make sure you've filled all the field in ".env.example" file and renamed it to ".env".
