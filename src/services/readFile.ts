@@ -1,11 +1,8 @@
 import fs from "fs";
+import { Request, Response } from "express";
 
-export default function rf() {
+export default function(req: Request, res: Response) {
     const rs = fs.createReadStream("./base.txt");
 
-    rs.on("data", (chunk) => {
-        console.log(chunk);
-    })
-
-    return rs;
+    rs.pipe(res);
 };
