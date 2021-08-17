@@ -6,3 +6,5 @@ services:
     restart: always
     ports:
       - "3311:3311"
+    volumes:
+      - ./:/app
